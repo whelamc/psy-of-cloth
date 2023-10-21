@@ -162,4 +162,6 @@ if upload:
         st.markdown(explanation)
         # st.write(prediction)
     else :
-        st.header("没有检测到人")
+        st.header("没有检测到人",divider="rainbow")
+
+st.markdown(''':rainbow[仓库: https://github.com/whelamc/psy-of-cloth]''')
