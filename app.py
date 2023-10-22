@@ -51,7 +51,7 @@ def make_prediction(img):
 def create_image_with_bboxes(img, prediction):
     img_tensor = torch.tensor(img)
     img_with_bboxes = draw_bounding_boxes(img_tensor, boxes=prediction["boxes"], labels=prediction["labels"],
-                                          colors="red", width=1)
+                                          colors="red", width=2)
     img_with_bboxes_up = img_with_bboxes.detach().numpy().transpose(1, 2, 0)
 
     return img_with_bboxes_up
